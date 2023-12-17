@@ -1,7 +1,7 @@
 
 
 @extends('base')
-@section('title', 'Hello City')
+@section('title')
 
 @section('content')
 
