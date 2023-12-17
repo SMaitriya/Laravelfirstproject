@@ -10,7 +10,3 @@
      
 @endsection
 
-@section('footer')
-<p>&copy; Copyright {{date('Y')}} &middot;</p>
-@endsection
-
