@@ -1,5 +1,5 @@
-
 @extends('base')
+@section('title', 'About Us | Hello City')
 
 @section('content')
        
@@ -9,3 +9,8 @@
 
      
 @endsection
+
+@section('footer')
+<p>&copy; Copyright {{date('Y')}} &middot;</p>
+@endsection
+
