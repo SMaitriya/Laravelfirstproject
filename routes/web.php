@@ -9,3 +9,6 @@ Route::get('/', function() {
 Route::name('about')->get('/about-us', function(){
     return view('pages/about');
 });
+
+
+Route::view('/help', 'pages.help') -> name('help');

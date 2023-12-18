@@ -1,5 +1,5 @@
-@extends('base')
-@section('title', 'About Us | ' . config('app.name'))
+@extends('layouts.base', ['title' => 'About Us'])
+
 
 @section('content')
 <img src={{ asset('images/ord.png')}} width=500px height=300px alt="logo" class="my-12 rounded full shadow-md">

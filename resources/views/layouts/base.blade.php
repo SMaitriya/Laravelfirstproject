@@ -6,8 +6,8 @@
         <script src="https://cdn.tailwindcss.com"></script>
 
  
-
-        <title>@yield('title', config('app.name'))</title>
+      
+        <title>{{ titre($title ?? null)}}</title>
 
     </head>
     <body class="py-6 flex flex-col justify-between items-center min-h-screen bg-violet-400">
@@ -17,19 +17,8 @@
     </main>
     
     
+   @include('layouts/partials/footer')
 
-
-    <footer>
-        
-    <p class="text-gray-400">&copy; Copyright {{date('Y')}} 
-        
-    @if(! Route::is('about'))
-    &middot; <a href="{{route('about')}}" class="text-indigo-500 hover:text-rose-600 underline">About us</a>
-    @endif
-
-
-    </p>
-    
-</footer>
+   
     </body>
 </html>
